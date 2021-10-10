@@ -14,4 +14,22 @@ fun main(){
     if (computerChoice == playerChoice) {
         print("It's a draw")
     }
+    if (computerChoice == "rock" && playerChoice == "paper") {
+        print("You won!")
+    }
+    if (computerChoice == "rock" && playerChoice == "scissors") {
+        print("You loose")
+    }
+    if (computerChoice == "paper" && playerChoice == "scissors") {
+        print("You won!")
+    }
+    if (computerChoice == "paper" && playerChoice == "rock") {
+        print("You loose")
+    }
+    if (computerChoice == "scissors" && playerChoice == "rock") {
+        print("You won!")
+    }
+    if (computerChoice == "scissors" && playerChoice == "paper") {
+        print("You loose")
+    }
 }
