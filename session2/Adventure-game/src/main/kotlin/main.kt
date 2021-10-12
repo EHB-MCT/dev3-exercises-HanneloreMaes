@@ -25,6 +25,7 @@ fun challengeOne(){
     if (playerInput2 != "yes"){
         println("'Maybe an other time'")
         println("'Let's keep going'")
+        challengeTwo()
     }
     if(playerInput2 == "yes"){
         println("I live in the jungle")
@@ -36,16 +37,40 @@ fun challengeOne(){
         val riddle1 = setOf("Simba","simba","The Lion King Simba", "the lion king simba", "lion king simba")
         val playerInput3 = readLine()
         if (riddle1.contains(playerInput3)){
-            answerSucces()
+            challengeTwo()
         } else {
             gameOver()
         }
     }
 }
+fun challengeTwo(){
+    answerSucces()
+    println(" ")
+    println("*After walking for a while*")
+    println("'Do you also see the dices on the ground? Are you willing to play a game?'")
+    println("Enter yes or no")
+    val playerInput4 = readLine()
+
+    if (playerInput4 == "yes"){
+        println("'Let's play guess the number!'")
+        rollDice()
+    } else{
+        println("'Maybe an other time'")
+        println("'Let's keep going'")
+    }
+
+
+}
+
+fun rollDice(){
+
+}
+
 fun answerSucces(){
     println("'Yippie! You guessed correctly'")
     println("'Let's keep moving and find the others'")
 }
+
 fun gameOver(){
     println("'Oh no! You answer a riddle wrong.'")
     println("'I think we shut head back to the others.'")
