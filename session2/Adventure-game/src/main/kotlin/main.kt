@@ -63,7 +63,18 @@ fun challengeTwo(){
 }
 
 fun rollDice(){
+    val options = arrayOf("1", "2", "3","4","5","6")
+    val randomNumber = (0..5).random()
+    val computerChoice = options[randomNumber]
 
+    println ("Choose your number between 1 and 6")
+    val playerChoice = readLine()
+
+    if (computerChoice == playerChoice) {
+        answerSucces()
+    } else if (computerChoice > playerChoice){
+        gameOver()
+    }
 }
 
 fun answerSucces(){
@@ -72,7 +83,7 @@ fun answerSucces(){
 }
 
 fun gameOver(){
-    println("'Oh no! You answer a riddle wrong.'")
+    println("'Oh no! You answered wrong.'")
     println("'I think we shut head back to the others.'")
     println("'But no worry. You will be lucky next time'")
     println(" ")
