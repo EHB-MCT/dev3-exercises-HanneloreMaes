@@ -68,11 +68,15 @@ fun rollDice(){
     val computerChoice = options[randomNumber]
 
     println ("Choose your number between 1 and 6")
-    val playerChoice = readLine()
+    val playerChoice = readLine().toString()
 
     if (computerChoice == playerChoice) {
+        println ("You choose" + " " + playerChoice)
+        println("Computer chooses" + " " + computerChoice)
         answerSucces()
-    } else if (computerChoice > playerChoice){
+    } else if (computerChoice > playerChoice || computerChoice < playerChoice){
+        println ("You choose" + " " + playerChoice)
+        println("Computer chooses" + " " + computerChoice)
         gameOver()
     }
 }
