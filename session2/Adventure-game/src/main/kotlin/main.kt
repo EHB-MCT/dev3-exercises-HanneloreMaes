@@ -137,7 +137,7 @@ fun answerSucces(){
 fun gameOver(){
     println("*Computer*")
     println("'Oh no! You answered wrong.'")
-    println("'I think we shut head back to the others.'")
+    println("'I think we should head back to the others.'")
     println("'But no worry. You will be lucky next time'")
     println(" ")
     main()
