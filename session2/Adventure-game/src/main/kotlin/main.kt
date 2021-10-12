@@ -36,14 +36,16 @@ fun challengeOne(){
         val riddle1 = setOf("Simba","simba","The Lion King Simba", "the lion king simba", "lion king simba")
         val playerInput3 = readLine()
         if (riddle1.contains(playerInput3)){
-            println("'Yippie! You guessed correctly'")
-            println("'Let's keep moving and find the others'")
+            answerSucces()
         } else {
             gameOver()
         }
     }
 }
-
+fun answerSucces(){
+    println("'Yippie! You guessed correctly'")
+    println("'Let's keep moving and find the others'")
+}
 fun gameOver(){
     println("'Oh no! You answer a riddle wrong.'")
     println("'I think we shut head back to the others.'")
