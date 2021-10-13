@@ -97,7 +97,7 @@ fun rollDice(){
         println ("You choose" + " " + playerChoice)
         println("Computer chooses" + " " + computerChoice)
         answerSucces()
-        println("''")
+        println(" ")
         println("*Computer*")
         println("'Yeah! We found Micky Mouse'")
         println("*Turning to Micky Mouse*")
@@ -126,6 +126,63 @@ fun rollDice(){
 }
 
 fun weaponChoice(){
+    println(" ")
+    println("*A couple of minutes later*")
+    println("*Computer*")
+    println("'Do you also feel the ground shaking?'")
+    println("*Ground is shaking heavily*")
+    println("*Villain*")
+    println("'What are you doing here?! Nobody will cross this bridge!'")
+    println("'Choose your weapon and accept the challange!'")
+    println("Choose your weapon: magic want - sword - flower")
+
+    val playerInput4 = readLine()
+
+    if (playerInput4 == "magic want"){
+        println("You choose magic want")
+        println("*Computer*")
+        println("'Quick take the want and use it!'")
+        println("*After a couples of tries*")
+        println("*Computer*")
+        println("'It won't work!! Quick!! We need to go from here'")
+        weaponChoice()
+    }
+    if (playerInput4 == "sword"){
+        println("You choose sword")
+        println("*Computer*")
+        println("'Quick take the sword and use it! Let's go for battle'")
+        println("*During the battle, the sword shatters*")
+        println("*Computer*")
+        println("'What?! The sword shattered! Hero watch out!'")
+        gameOver()
+    }
+    if (playerInput4 == "flower"){
+        println("You choose flower")
+        println("*Computer*")
+        println("'Quick take the flower and use it!'")
+        println(" ")
+        println("'What do you mean by 'How can I defeat him with that?' Just go!'")
+        println("*Villain*")
+        println("'Who dares to stand in front of me!!! Oh flower!'")
+        println("*Smells flower*")
+        println("'A rose. My favorite flower. I'm going to place it in a vase.'")
+        println("*Villain walks away*")
+        println("*Computer*")
+        println("'Hero look we can use the bridge know.'")
+        println("'But who is standing there on the other side of the bridge?'")
+        println(" ")
+        println("*Sleeping beauty*")
+        println("'Thank you very much for defeating the villain'")
+        println("'A was on my way to my prince and the villain blocked the bridge. So I couldn't cross it'")
+        println("'I will take my leave now. My prince awaits.'")
+        println(" ")
+        println("*Computer*")
+        println("'Yippie! We saved an other character!'")
+        println(" ")
+        println(" ")
+        println("'Great job Hero! We found all the characters. Let's head back to the others'")
+        main()
+    }
 
 }
 
