@@ -1,9 +1,13 @@
-class Comedian(override val name: String): Person(name) {
+class Comedian(protected val name: String): ChatPartner {
+    override fun introduce() {
+        println("Hello, my name is $name")
+    }
+
     override fun talk(){
         tellJoke()
     }
 
     fun tellJoke(){
-        println("toooooo early")
+        println("Way toooooo early")
     }
 }

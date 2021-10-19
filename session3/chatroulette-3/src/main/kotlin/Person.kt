@@ -4,6 +4,6 @@ open class Person(open val name: String) {
     }
 
     open fun talk(){
-        println("How you doin?")
+        println("How you doing?")
     }
 }
