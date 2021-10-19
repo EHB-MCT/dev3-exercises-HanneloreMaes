@@ -1,7 +1,5 @@
 fun main(){
-    val person1 = Person("Player1")
-    val person2 = Person("Player2")
+    val persons = arrayOf(Person("Player 1"), Person("Player 2")).random()
 
-    val persons = arrayOf(person1.name, person2.name).random()
-    println("Hello. My name is $persons")
+    persons.introduce()
 }
