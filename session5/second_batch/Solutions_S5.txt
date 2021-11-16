@@ -1,0 +1,43 @@
+Session5
+
+ Excercise 1.1
+  Code:
+   SELECT * FROM orders
+   Where customerNumber = '328'
+  Answer:
+   10233	2004-03-29	2004-04-04	2004-04-02	Shipped	Customer requested special shippment. The instructions were passed along to the warehouse	328
+   10251	2004-05-18	2004-05-24	2004-05-24	Shipped													328
+   10401	2005-04-03	2005-04-14                      On Hold	Customer credit limit exceeded. Will ship when a payment is received.				328
+
+ Excercise 1.2
+  Code:
+   SELECT COUNT(customerNumber) FROM orders
+   Where customerNumber = '328'
+  Answer:
+   3
+
+
+ Excercise 2
+  Code:
+   SELECT COUNT(*) FROM orders
+   INNER JOIN customers ON orders.customerNumber = customers.customerNumber
+   WHERE customers.contactLastName = 'Young' AND customers.contactFirstName = 'Julie'
+  Answer:
+   3
+
+
+ Excercise 3
+  Code:
+   SELECT * FROM customers
+   WHERE country = 'USA' AND creditLimit = '0.00'
+  Answer:
+   168	American Souvenirs Inc	Franco	Keith	2035557845	149 Spinnaker Dr.	Suite 101	New Haven	CT	97823	USA	1286	0.00
+
+
+ Excercise 4
+  Code:
+   SELECT AVG(payments.amount), customers.customerName FROM payments
+   INNER JOIN customers ON payments.customerNumber = customers.customerNumber GROUP BY customers.customerNumber
+   ORDER BY AVG(payments.amount) DESC LIMIT 1
+  Answer:
+   80375.240000	Collectable Mini Designs Co.
