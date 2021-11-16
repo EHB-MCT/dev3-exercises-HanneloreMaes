@@ -1,0 +1,56 @@
+Session5
+
+ Excercise 1
+  Code:
+   SELECT productName FROM products
+   WHERE productCode = 'S24_3856'
+  Answer:
+   1956 Porsche 356A Coupe
+
+ Excercise 2
+  Code:
+   SELECT AVG(buyPrice) FROM products
+  Answer:
+   54.395182
+
+ Excercise 3
+  Code:
+   SELECT * FROM products
+   WHERE productName LIKE '%Ford%'
+  Answer:
+   S12_1099	1968 Ford Mustang	            Classic Cars	1:12	Autoart Studio Design	Hood, doors and trunk all open to reveal highly detailed interior features. Steering wheel actually turns the front wheels. Color dark green.	68	95.34	194.57
+   S12_3891	1969 Ford Falcon	            Classic Cars	1:12	Second Gear Diecast	Turnable front wheels; steering function; detailed interior; detailed engine; opening hood; opening trunk; opening doors; and detailed chassis.	1049	83.05	173.02
+   S18_1097	1940 Ford Pickup Truck	            Trucks and Buses	1:18	Studio M Art Models	This model features soft rubber tires, working steering, rubber mud guards, authentic Ford logos, detailed undercarriage, opening doors and hood,  removable split rear gate, full size spare mounted in bed, detailed interior with opening glove box	2613	58.33	116.67
+   S18_2248	1911 Ford Town Car	            Vintage Cars	1:18	Motor City Art Classics	Features opening hood, opening doors, opening trunk, wide white wall tires, front door arm rests, working steering system.	540	33.30	60.54
+   S18_2325	1932 Model A Ford J-Coupe           Vintage Cars	1:18	Autoart Studio Design	This model features grille-mounted chrome horn, lift-up louvered hood, fold-down rumble seat, working steering system, chrome-covered spare, opening doors, detailed and wired engine	9354	58.48	127.13
+   S18_2432	1926 Ford Fire Engine	            Trucks and Buses	1:18	Carousel DieCast Legends	Gleaming red handsome appearance. Everything is here the fire hoses, ladder, axes, bells, lanterns, ready to fight any inferno.	2018	24.92	60.77
+   S18_2949	1913 Ford Model T Speedster         Vintage Cars	1:18	Carousel DieCast Legends	This 250 part reproduction includes moving handbrakes, clutch, throttle and foot pedals, squeezable horn, detailed wired engine, removable water, gas, and oil cans, pivoting monocle windshield, all topped with a baked enamel red finish. Each replica comes with an Owners Title and Certificate of Authenticity. Color red.	4189	60.78	101.31
+   S18_2957	1934 Ford V8 Coupe	            Vintage Cars	1:18	Min Lin Diecast	Chrome Trim, Chrome Grille, Opening Hood, Opening Doors, Opening Trunk, Detailed Engine, Working Steering System	5649	34.35	62.46
+   S18_3140	1903 Ford Model A	            Vintage Cars	1:18	Unimax Art Galleries	Features opening trunk,  working steering system	3913	68.30	136.59
+   S18_3482	1976 Ford Gran Torino	            Classic Cars	1:18	Gearbox Collectibles	"Highly detailed 1976 Ford Gran Torino ""Starsky and Hutch"" diecast model. Very well constructed and painted in red and white patterns."	9127	73.49	146.99
+   S18_4600	1940s Ford truck	            Trucks and Buses	1:18	Motor City Art Classics	"This 1940s Ford Pick-Up truck is re-created in 1:18 scale of original 1940s Ford truck. This antique style metal 1940s Ford Flatbed truck is all hand-assembled. This collectible 1940's Pick-Up truck is painted in classic dark green color, and features rotating wheels."	3128	84.76	121.08
+   S18_4933	1957 Ford Thunderbird	            Classic Cars	1:18	Studio M Art Models	This 1:18 scale precision die-cast replica, with its optional porthole hardtop and factory baked-enamel Thunderbird Bronze finish, is a 100% accurate rendition of this American classic.	3209	34.21	71.27
+   S24_3151	1912 Ford Model T Delivery Wagon    Vintage Cars	1:24	Min Lin Diecast	This model features chrome trim and grille, opening hood, opening doors, opening trunk, detailed engine, working steering system. Color white.	9173	46.91	88.51
+   S24_3816	1940 Ford Delivery Sedan	    Vintage Cars	1:24	Carousel DieCast Legends	Chrome Trim, Chrome Grille, Opening Hood, Opening Doors, Opening Trunk, Detailed Engine, Working Steering System. Color black.	6621	48.64	83.86
+   S32_4289	1928 Ford Phaeton Deluxe	    Vintage Cars	1:32	Highway 66 Mini Classics	This model features grille-mounted chrome horn, lift-up louvered hood, fold-down rumble seat, working steering system	136	33.02	68.79
+
+ Excercise 4
+  Code:
+   SELECT MAX(buyPrice) FROM products
+  Answer:
+   103.42
+
+ Excercise 5
+  Code:
+   SELECT * FROM products
+   WHERE productLine LIKE '%Ship%'
+  Answer:
+   S72_3212	Pont Yacht	        Ships	1:72	Unimax Art Galleries	"Measures 38 inches Long x 33 3/4 inches High. Includes a stand. Many extras including rigging, long boats, pilot house, anchors, etc. Comes with 2 masts, all square-rigged"	414	33.30	54.60
+   S18_3029	1999 Yamaha Speed Boat	Ships	1:18	Min Lin Diecast	Exact replica. Wood and Metal. Many extras including rigging, long boats, pilot house, anchors, etc. Comes with three masts, all square-rigged.	4259	51.61	86.02
+   S24_2011	18th century schooner	Ships	1:24	Carousel DieCast Legends	All wood with canvas sails. Many extras including rigging, long boats, pilot house, anchors, etc. Comes with 4 masts, all square-rigged.	1898	82.34	122.89
+   S700_1138	The Schooner Bluenose	Ships	1:700	Autoart Studio Design	"All wood with canvas sails. Measures 31 1/2 inches in Length, 22 inches High and 4 3/4 inches Wide. Many extras. The schooner Bluenose was built in Nova Scotia in 1921 to fish the rough waters off the coast of Newfoundland. Because of the Bluenose racing prowess she became the pride of all Canadians. Still featured on stamps and the Canadian dime, the Bluenose was lost off Haiti in 1946."	1897	34.00	66.67
+   S700_1938	The Mayflower	        Ships	1:700	Studio M Art Models	"Measures 31 1/2 inches Long x 25 1/2 inches High x 10 5/8 inches Wide All wood with canvas sail. Extras include long boats, rigging, ladders, railing, anchors, side cannons, hand painted, etc."	737	43.30	86.61
+   S700_2047	HMS Bounty	        Ships	1:700	Unimax Art Galleries	"Measures 30 inches Long x 27 1/2 inches High x 4 3/4 inches Wide.  Many extras including rigging, long boats, pilot house, anchors, etc. Comes with three masts, all square-rigged."	3501	39.83	90.52
+   S700_2610	The USS Constitution    Ship	1:700	Red Start Diecast	"All wood with canvas sails. Measures 31 1/2"" Length x 22 3/8"" High x 8 1/4"" Width. Extras include 4 boats on deck, sea sprite on bow, anchors, copper railing, pilot houses, etc."	7083	33.97	72.28
+   S700_3505	The Titanic	        Ships	1:700	Carousel DieCast Legends	Completed model measures 19 1/2 inches long, 9 inches high, 3inches wide and is in barn red/black. All wood and metal.	1956	51.09	100.17
+   S700_3962	The Queen Mary	        Ships	1:700	Welly Diecast Productions	Exact replica. Wood and Metal. Many extras including rigging, long boats, pilot house, anchors, etc. Comes with three masts, all square-rigged.	5088	53.63	99.31
