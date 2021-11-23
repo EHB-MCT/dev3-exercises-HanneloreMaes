@@ -21,7 +21,7 @@ fun  main(){
     println("Choose your city: Brussel, Antwerpen-Centraal or Halle")
     val search= readLine()
     val statement = connection.prepareStatement(
-        "SELECT * FROM S6_trains INNER JOIN S6_rides ON S6_trains.id = S6_rides.train_id WHERE city_A =? ")
+        "SELECT * FROM S6_trains INNER JOIN S6_rides ON S6_trains.id = S6_rides.train_id WHERE city_A=? ORDER BY time_depart LIMIT 1 ")
     statement.setString(1, search)
     // The result of your query will be a type ResultSet
     // This is a bit similar to collections in Kotlin
