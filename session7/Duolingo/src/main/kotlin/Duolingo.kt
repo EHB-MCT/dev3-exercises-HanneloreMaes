@@ -25,13 +25,17 @@ class Duolingo {
         )
 
     fun play(){
-        val fiveWords = words.shuffled().take(5)           // altijd in playfunctie anders krijg je dezelfde woorden
-        fiveWords.forEach{
-            println("What is the translation of ${it.original}")
+        val fiveWords = words.shuffled().take(5).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
+
+        while (fiveWords.isNotEmpty()){
+            val selectedWord = fiveWords.random()
+            println("What is the translation of ${selectedWord.original}")
             val userInput = readLine()
-            if (userInput != it.translated){
+            if (userInput != selectedWord.translated){
                 println("Je hebt een foutje gemaakt. Dit is de juiste antwoord")
-                println(it.translated)
+                println(selectedWord.translated)
+            }else{
+                fiveWords.remove(selectedWord)
             }
         }
         println("Je hebt alle woorden gehad. Kom volgende keer zeker terug!")
