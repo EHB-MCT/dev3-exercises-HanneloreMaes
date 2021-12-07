@@ -23,14 +23,14 @@ class Duolingo (val number: Int = 5, val language: String) {
             German("Lederhosen", "Lederen broek")
         )
 
-    fun play(){
+    fun easyPlay(){
         val listLanguage = words.filter {
             it.language == language
         }
-        val fiveWords = listLanguage.shuffled().take(number).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
+        val totalWords = listLanguage.shuffled().take(3).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
 
-        while (fiveWords.isNotEmpty()){
-            val selectedWord = fiveWords.random()
+        while (totalWords.isNotEmpty()){
+            val selectedWord = totalWords.random()
 
             println("What is the translation of ${selectedWord.original}")
             val userInput = readLine()
@@ -38,9 +38,53 @@ class Duolingo (val number: Int = 5, val language: String) {
                 println("Je hebt een foutje gemaakt. Dit is de juiste antwoord")
                 println(selectedWord.translated)
             }else{
-                fiveWords.remove(selectedWord)
+                totalWords.remove(selectedWord)
             }
-            println("Woorden te gaan: ${fiveWords.count()}")
+            println("Woorden te gaan: ${totalWords.count()}")
+        }
+        println("Je hebt alle woorden gehad. Kom volgende keer zeker terug!")
+    }
+
+    fun diffPlay(){
+        val listLanguage = words.filter {
+            it.language == language
+        }
+        val totalWords = listLanguage.shuffled().take(3).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
+
+        while (totalWords.isNotEmpty()){
+            val selectedWord = totalWords.random()
+
+            println("What is the translation of ${selectedWord.original}")
+            val userInput = readLine()
+            if (userInput != selectedWord.translated){
+                println("Je hebt een foutje gemaakt. Dit is de juiste antwoord")
+                println(selectedWord.translated)
+            }else{
+                totalWords.remove(selectedWord)
+            }
+            println("Woorden te gaan: ${totalWords.count()}")
+        }
+        println("Je hebt alle woorden gehad. Kom volgende keer zeker terug!")
+    }
+
+    fun play(){
+        val listLanguage = words.filter {
+            it.language == language
+        }
+        val totalWords = listLanguage.shuffled().take(number).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
+
+        while (totalWords.isNotEmpty()){
+            val selectedWord = totalWords.random()
+
+            println("What is the translation of ${selectedWord.original}")
+            val userInput = readLine()
+            if (userInput != selectedWord.translated){
+                println("Je hebt een foutje gemaakt. Dit is de juiste antwoord")
+                println(selectedWord.translated)
+            }else{
+                totalWords.remove(selectedWord)
+            }
+            println("Woorden te gaan: ${totalWords.count()}")
         }
         println("Je hebt alle woorden gehad. Kom volgende keer zeker terug!")
     }
