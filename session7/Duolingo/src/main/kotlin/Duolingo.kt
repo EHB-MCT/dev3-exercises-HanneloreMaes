@@ -1,5 +1,5 @@
 class Duolingo (val number: Int = 5, val language: String) {
-        val words = mutableListOf<Word>(
+        val words = mutableSetOf<Word>(
             English("Truck", "Vrachtwagen", 1),
             English("Mother", "Moeder", 1),
             English("Friendship", "Vriendschap", 1),
