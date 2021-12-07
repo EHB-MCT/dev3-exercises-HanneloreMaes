@@ -1,4 +1,4 @@
-class Duolingo (val number: String, val language: String) {
+class Duolingo (val number: Int = 5, val language: String) {
 
         val words = mutableListOf<Word>(
             Word("Truck", "Vrachtwagen", "English"),
@@ -28,7 +28,7 @@ class Duolingo (val number: String, val language: String) {
         val listLanguage = words.filter {
             it.language == language
         }
-        val fiveWords = listLanguage.shuffled().take(number.toInt()).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
+        val fiveWords = listLanguage.shuffled().take(number).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
 
         while (fiveWords.isNotEmpty()){
             val selectedWord = fiveWords.random()
@@ -41,6 +41,7 @@ class Duolingo (val number: String, val language: String) {
             }else{
                 fiveWords.remove(selectedWord)
             }
+            println("Woorden te gaan: ${fiveWords.count()}")
         }
         println("Je hebt alle woorden gehad. Kom volgende keer zeker terug!")
     }
