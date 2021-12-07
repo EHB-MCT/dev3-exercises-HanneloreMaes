@@ -1,27 +1,26 @@
 class Duolingo (val number: Int = 5, val language: String) {
-
         val words = mutableListOf<Word>(
-            Word("Truck", "Vrachtwagen", "English"),
-            Word("Mother", "Moeder", "English"),
-            Word("Friendship", "Vriendschap", "English"),
-            Word("Toy", "Speelgoed", "English"),
-            Word("Voice", "Stem", "English"),
-            Word("Woman", "Vrouw", "English"),
-            Word("Defeat", "Verlies", "English"),
-            Word("Win", "Win", "English"),
-            Word("Mirror", "Spiegel", "English"),
-            Word("Lover", "Geliefde", "English"),
+            English("Truck", "Vrachtwagen"),
+            English("Mother", "Moeder"),
+            English("Friendship", "Vriendschap"),
+            English("Toy", "Speelgoed"),
+            English("Voice", "Stem"),
+            English("Woman", "Vrouw"),
+            English("Defeat", "Verlies"),
+            English("Win", "Win"),
+            English("Mirror", "Spiegel"),
+            English("Lover", "Geliefde"),
 
-            Word("Nett", "Lief", "Duits"),
-            Word("Klug", "Slim", "Duits"),
-            Word("Schmetterling", "Vlinder", "Duits"),
-            Word("Krakenwagen", "Ziekenwagen", "Duits"),
-            Word("Salat", "Salade", "Duits"),
-            Word("Klugscheißer", "Betweter", "Duits"),
-            Word("Meer", "Zee", "Duits"),
-            Word("Kaffee", "Koffie", "Duits"),
-            Word("Auf Wiedersehen", "Tot ziens", "Duits"),
-            Word("Lederhosen", "Lederen broek", "Duits")
+            German("Nett", "Lief"),
+            German("Klug", "Slim"),
+            German("Schmetterling", "Vlinder"),
+            German("Krakenwagen", "Ziekenwagen"),
+            German("Salat", "Salade"),
+            German("Klugscheißer", "Betweter"),
+            German("Meer", "Zee"),
+            German("Kaffee", "Koffie"),
+            German("Auf Wiedersehen", "Tot ziens"),
+            German("Lederhosen", "Lederen broek")
         )
 
     fun play(){
