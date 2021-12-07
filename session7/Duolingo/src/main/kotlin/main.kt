@@ -27,7 +27,7 @@ fun easyDiffFun(){
         if (setLang == "Engels" || setLang == "Duits") {
             val setWords = 3
             val duolingoEasy = Duolingo(setWords, setLang)
-            duolingoEasy.easyPlay()
+            duolingoEasy.play()
         } else {
             throw Exception("Kies verstandelijk volgende keer. Falen is geen optie")
         }
@@ -38,7 +38,7 @@ fun easyDiffFun(){
         if (setLang == "Engels" || setLang == "Duits") {
             val setWords = 6
             val duolingoDiff = Duolingo(setWords, setLang)
-            duolingoDiff.diffPlay()
+            duolingoDiff.play()
         } else {
             throw Exception("Kies verstandelijk volgende keer. Falen is geen optie")
         }
