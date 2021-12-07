@@ -31,15 +31,20 @@ class Duolingo (val number: Int = 5, val language: String) {
 
         while (totalWords.isNotEmpty()){
             val selectedWord = totalWords.random()
-
+            println(" ")
             println("What is the translation of ${selectedWord.original}")
             val userInput = readLine()
             if (userInput != selectedWord.translated){
                 println("Je hebt een foutje gemaakt. Dit is de juiste antwoord")
                 println(selectedWord.translated)
+                selectedWord.difficulty + 1
+                println("${selectedWord.difficulty}" + " becomes " + "${selectedWord.difficulty + 1}")
             }else{
                 totalWords.remove(selectedWord)
+                selectedWord.difficulty - 1
+                println("${selectedWord.difficulty}" + " becomes " + "${selectedWord.difficulty - 1}")
             }
+            println(" ")
             println("Woorden te gaan: ${totalWords.count()}")
         }
         println("Je hebt alle woorden gehad. Kom volgende keer zeker terug!")
@@ -49,19 +54,25 @@ class Duolingo (val number: Int = 5, val language: String) {
         val listLanguage = words.filter {
             it.language == language
         }
-        val totalWords = listLanguage.shuffled().take(3).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
+        val totalWords = listLanguage.shuffled().take(6).toMutableSet()           // altijd in playfunctie anders krijg je dezelfde woorden,,, gebruik van .toMutableSet om te kunnen aanpassen
 
         while (totalWords.isNotEmpty()){
             val selectedWord = totalWords.random()
-
+            println(" ")
             println("What is the translation of ${selectedWord.original}")
             val userInput = readLine()
             if (userInput != selectedWord.translated){
                 println("Je hebt een foutje gemaakt. Dit is de juiste antwoord")
                 println(selectedWord.translated)
+                selectedWord.difficulty + 1
+                println("${selectedWord.difficulty}" + " becomes " + "${selectedWord.difficulty + 1}")
+
             }else{
                 totalWords.remove(selectedWord)
+                selectedWord.difficulty - 1
+                println("${selectedWord.difficulty}" + " becomes " + "${selectedWord.difficulty - 1}")
             }
+            println(" ")
             println("Woorden te gaan: ${totalWords.count()}")
         }
         println("Je hebt alle woorden gehad. Kom volgende keer zeker terug!")
@@ -75,15 +86,21 @@ class Duolingo (val number: Int = 5, val language: String) {
 
         while (totalWords.isNotEmpty()){
             val selectedWord = totalWords.random()
-
+            println(" ")
             println("What is the translation of ${selectedWord.original}")
             val userInput = readLine()
             if (userInput != selectedWord.translated){
                 println("Je hebt een foutje gemaakt. Dit is de juiste antwoord")
                 println(selectedWord.translated)
+                selectedWord.difficulty + 1
+                println("${selectedWord.difficulty}" + " becomes " + "${selectedWord.difficulty + 1}")
+
             }else{
                 totalWords.remove(selectedWord)
+                selectedWord.difficulty - 1
+                println("${selectedWord.difficulty}" + " becomes " + "${selectedWord.difficulty - 1}")
             }
+            println(" ")
             println("Woorden te gaan: ${totalWords.count()}")
         }
         println("Je hebt alle woorden gehad. Kom volgende keer zeker terug!")
