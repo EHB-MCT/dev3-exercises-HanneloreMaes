@@ -1,26 +1,26 @@
 class Duolingo (val number: Int = 5, val language: String) {
         val words = mutableListOf<Word>(
-            English("Truck", "Vrachtwagen"),
-            English("Mother", "Moeder"),
-            English("Friendship", "Vriendschap"),
-            English("Toy", "Speelgoed"),
-            English("Voice", "Stem"),
-            English("Woman", "Vrouw"),
-            English("Defeat", "Verlies"),
-            English("Win", "Win"),
-            English("Mirror", "Spiegel"),
-            English("Lover", "Geliefde"),
+            English("Truck", "Vrachtwagen", 1),
+            English("Mother", "Moeder", 1),
+            English("Friendship", "Vriendschap", 1),
+            English("Toy", "Speelgoed", 1),
+            English("Voice", "Stem", 1),
+            English("Woman", "Vrouw", 1),
+            English("Defeat", "Verlies",2),
+            English("Win", "Win",2),
+            English("Mirror", "Spiegel",2),
+            English("Lover", "Geliefde",2),
 
-            German("Nett", "Lief"),
-            German("Klug", "Slim"),
-            German("Schmetterling", "Vlinder"),
-            German("Krakenwagen", "Ziekenwagen"),
-            German("Salat", "Salade"),
-            German("Klugscheißer", "Betweter"),
-            German("Meer", "Zee"),
-            German("Kaffee", "Koffie"),
-            German("Auf Wiedersehen", "Tot ziens"),
-            German("Lederhosen", "Lederen broek")
+            German("Nett", "Lief", 2),
+            German("Klug", "Slim", 1),
+            German("Schmetterling", "Vlinder",2),
+            German("Krakenwagen", "Ziekenwagen", 1),
+            German("Salat", "Salade", 1),
+            German("Klugscheißer", "Betweter", 2),
+            German("Meer", "Zee",1),
+            German("Kaffee", "Koffie",1),
+            German("Auf Wiedersehen", "Tot ziens",1),
+            German("Lederhosen", "Lederen broek",1)
         )
 
     fun easyPlay(){
